@@ -1,0 +1,261 @@
+{
+   "abi": [
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "_ticketPrice",
+               "type": "uint256"
+            },
+            {
+               "internalType": "uint256",
+               "name": "_lotteryRoundTime",
+               "type": "uint256"
+            },
+            {
+               "internalType": "uint256",
+               "name": "_minRoundPlayers",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "nonpayable",
+         "type": "constructor"
+      },
+      {
+         "anonymous": false,
+         "inputs": [
+            {
+               "indexed": false,
+               "internalType": "address",
+               "name": "winner",
+               "type": "address"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "round",
+               "type": "uint256"
+            },
+            {
+               "indexed": false,
+               "internalType": "bool",
+               "name": "isGifted",
+               "type": "bool"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "prizeAmount",
+               "type": "uint256"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "timestamp",
+               "type": "uint256"
+            }
+         ],
+         "name": "LotteryResult",
+         "type": "event"
+      },
+      {
+         "anonymous": false,
+         "inputs": [
+            {
+               "indexed": false,
+               "internalType": "address",
+               "name": "player",
+               "type": "address"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "round",
+               "type": "uint256"
+            },
+            {
+               "indexed": false,
+               "internalType": "bool",
+               "name": "isGifted",
+               "type": "bool"
+            },
+            {
+               "indexed": false,
+               "internalType": "uint256",
+               "name": "prizeAmount",
+               "type": "uint256"
+            }
+         ],
+         "name": "PlayerJoined",
+         "type": "event"
+      },
+      {
+         "inputs": [],
+         "name": "currentRound",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "getLotteryRoundTime",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "getMinRoundPlayers",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "address",
+               "name": "_recipient",
+               "type": "address"
+            }
+         ],
+         "name": "giftTicket",
+         "outputs": [],
+         "stateMutability": "payable",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "name": "isGift",
+         "outputs": [
+            {
+               "internalType": "bool",
+               "name": "",
+               "type": "bool"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "joinLottery",
+         "outputs": [],
+         "stateMutability": "payable",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "lastTime",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "owner",
+         "outputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "name": "players",
+         "outputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "prizeAmount",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [],
+         "name": "ticketPrice",
+         "outputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      },
+      {
+         "inputs": [
+            {
+               "internalType": "uint256",
+               "name": "",
+               "type": "uint256"
+            }
+         ],
+         "name": "winners",
+         "outputs": [
+            {
+               "internalType": "address",
+               "name": "",
+               "type": "address"
+            }
+         ],
+         "stateMutability": "view",
+         "type": "function"
+      }
+   ]
+}

@@ -1,0 +1,56 @@
+{
+    "data": {
+      "players": [
+        {
+          "address": "0xfe2882ac0a337a976aa73023c2a2a917f57ba2ed",
+          "isGifted": false,
+          "roundsPlayed": [
+            {
+              "round": {
+                "index": "1"
+              }
+            }
+          ],
+          "wins": [
+            {
+              "round": {
+                "index": "1"
+              }
+            }
+          ]
+        }
+      ],
+      "rounds": [
+        {
+          "currentPrize": "1000000000",
+          "index": "1",
+          "players": [
+            {
+              "player": {
+                "address": "0xfe2882ac0a337a976aa73023c2a2a917f57ba2ed"
+              }
+            }
+          ],
+          "winners": [
+            {
+              "player": {
+                "address": "0xfe2882ac0a337a976aa73023c2a2a917f57ba2ed"
+              }
+            }
+          ]
+        }
+      ],
+      "winners": [
+        {
+          "player": {
+            "address": "0xfe2882ac0a337a976aa73023c2a2a917f57ba2ed"
+          },
+          "prize": "1000000000",
+          "round": {
+            "index": "1"
+          },
+          "timestamp": "1617896868"
+        }
+      ]
+    }
+  }
