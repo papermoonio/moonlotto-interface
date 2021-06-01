@@ -1,4 +1,4 @@
-const routes = require('next-routes')();
+const routes = require("next-routes")();
 
 // Custom routes inside our application
 // It will export a set of navigation helpers
