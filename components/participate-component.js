@@ -47,7 +47,6 @@ class ParticipateComponent extends Component {
 
     // Contract info
     const contractInstance = LotteryInstance(lottery, 1);
-    
 
     try {
       if (this.state.justForMe) {
