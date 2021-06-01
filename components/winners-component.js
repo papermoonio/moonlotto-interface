@@ -1,9 +1,16 @@
 import React, { Component } from "react";
+import { Icon } from "semantic-ui-react";
 import * as ethers from "ethers";
 
 import { getLastRoundsWinners } from "../lib/subgraph-fetch";
 
 class WinnersComponent extends Component {
+  static async getInitialProps() {
+    return {
+      account: "",
+    };
+  }
+
   // Nextjs uses this function to render this first server-side
   static async getInitialProps() {
     this.setState({
@@ -49,10 +56,11 @@ class WinnersComponent extends Component {
   render() {
     const winners = [];
     for (const round of this.state.roundWinners) {
+      const isWinner = round.winner.toLowerCase() === this.props.account.toLowerCase();
       winners.push(
         <tbody key={round.index}>
-          <tr>
-            <td>{round.index}</td>
+          <tr className={isWinner ? "positive" : "" }>
+            <td>{round.index}  {isWinner ? <Icon name="trophy" /> : ""}</td>
             <td>{round.winner}</td>
             <td>{ethers.utils.formatEther(round.prize.toString())} DEV</td>
           </tr>

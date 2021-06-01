@@ -100,7 +100,7 @@ class MoonLottoDashboard extends Component {
         <br />
         <hr />
         <br />
-        <WinnersComponent />
+        <WinnersComponent account={this.state.account} />
         <br />
         <p style={{ textAlign: "center" }}>
           Don't judge the code :) as it is for demostration purposes only. You can check the source
