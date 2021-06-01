@@ -59,8 +59,10 @@ class WinnersComponent extends Component {
       const isWinner = round.winner.toLowerCase() === this.props.account.toLowerCase();
       winners.push(
         <tbody key={round.index}>
-          <tr className={isWinner ? "positive" : "" }>
-            <td>{round.index}  {isWinner ? <Icon name="trophy" /> : ""}</td>
+          <tr className={isWinner ? "positive" : ""}>
+            <td>
+              {round.index} {isWinner ? <Icon name="trophy" /> : ""}
+            </td>
             <td>{round.winner}</td>
             <td>{ethers.utils.formatEther(round.prize.toString())} DEV</td>
           </tr>

@@ -9,6 +9,7 @@ class ParticipateComponent extends Component {
   static async getInitialProps() {
     return {
       account: "",
+      connected: false,
     };
   }
 
@@ -122,7 +123,13 @@ class ParticipateComponent extends Component {
           </Form.Field>
           <Message error header="Oops!" content={this.state.errorMessage} />
 
-          <Button type="submit" as="div" labelPosition="right" fluid>
+          <Button
+            type="submit"
+            as="div"
+            disabled={!this.props.connected || this.state.recipient === ""}
+            labelPosition="right"
+            fluid
+          >
             <Button primary loading={this.state.loading} fluid>
               <Icon name="external alternate" />
               Submit on MetaMask

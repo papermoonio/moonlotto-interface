@@ -94,7 +94,7 @@ class MoonLottoDashboard extends Component {
           </Grid.Column>
           <Grid.Column width={1} stretched></Grid.Column>
           <Grid.Column width={8} stretched verticalAlign="top">
-            <ParticipateComponent account={this.state.account} />
+            <ParticipateComponent account={this.state.account} connected={this.state.connected} />
           </Grid.Column>
         </Grid>
         <br />
