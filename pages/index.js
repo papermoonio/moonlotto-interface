@@ -104,7 +104,7 @@ class MoonLottoDashboard extends Component {
         <br />
         <p style={{ textAlign: "center" }}>
           Don't judge the code :) as it is for demostration purposes only. You can check the source
-          code <a href="https://github.com/albertov19/moonlotto-interface">here</a>
+          code <a href="https://github.com/PureStake/moonlotto-interface">here</a>
         </p>
         <br />
       </Container>
