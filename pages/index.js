@@ -103,7 +103,7 @@ class MoonLottoDashboard extends Component {
         <WinnersComponent account={this.state.account} />
         <br />
         <p style={{ textAlign: "center" }}>
-          Don't judge the code :) as it is for demostration purposes only. You can check the source
+          Don't judge the code :) as it is for demonstration purposes only. You can check the source
           code <a href="https://github.com/PureStake/moonlotto-interface">here</a>
         </p>
         <br />
